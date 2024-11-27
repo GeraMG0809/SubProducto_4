@@ -16,6 +16,8 @@ class MainWindow(QMainWindow):
         self.pushButton_4.clicked.connect(self.compilacion)
 
         # Configurar la tabla para el análisis léxico
+        self.tableWidget.setColumnCount(3)
+        self.tableWidget.setHorizontalHeaderLabels(["Lexema", "Token", "#"])
         header = self.tableWidget.horizontalHeader()
         header.setSectionResizeMode(QHeaderView.Stretch)
         header.setStretchLastSection(True)
